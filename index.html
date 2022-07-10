@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Vue Mastery</title>
+    <title>Vue Mastery by Kacper adamczyk</title>
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
@@ -10,10 +10,17 @@
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <!--  view products -->
+      <h1>{{ product }}</h1>
+      <!--  view products.description -->
+      <p>{{ description }}</p>
     </div>
 
-    <!-- Import Js -->
+    <!-- Import App -->
     <script src="./main.js"></script>
+    <!-- Mounted App -->
+    <script>
+      const mountedApp = app.mount('#app');
+    </script>
   </body>
 </html>
